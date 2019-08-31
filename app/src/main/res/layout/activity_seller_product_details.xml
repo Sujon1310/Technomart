@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SellerProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/seller_product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitCenter"
+        />
+    <TextView
+        android:id="@+id/seller_product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_product_image_details"
+        android:text="@string/product_name1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seller_product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_product_name_details"
+        android:text="@string/product_description2"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seller_product_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_product_description_details"
+        android:text="@string/product_price1"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seller_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_product_price_details"
+        android:text="Seller Name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seller_phone_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_name_details"
+        android:text="Seller Phone Number"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/seller_address_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seller_phone_details"
+        android:text="Seller Address"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/call_seller_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Call Seller"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

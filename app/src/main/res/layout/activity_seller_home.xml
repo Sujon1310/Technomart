@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sellers.SellerHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/r_welcome_seller"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Sell Products"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="1dp"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Dear "
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/r_welcome_seller"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/seller_name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_below="@+id/r_welcome_seller"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="58dp"
+        />
+
+    <TextView
+        android:id="@+id/terms_condition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Technomart. You can sell your used or unused products by uploading them in Technomart. Before add any of your product to sell in Technomart please read the following Terms and Condition and accept those: \n\n1. The product must be a valid technology product.\n2. The product should be working. Do not upload any waste product.\n3. Please give valid price of your product. Invalid product price may not be approved.\n4. Please mention quantity of your products in the description field.\n5. Your product will live in Technomart for maximum one month.\n*Technomart have fully right to delete your product anytime."
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/seller_name_txt"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/terms_condition"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/accept_terms_chkb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept Terms and Conditions"
+            style="@style/Material.Drawable.CheckBox"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/seller_add_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_10"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="130dp"
+        android:background="@drawable/buttons"
+        android:visibility="invisible"
+        android:text="Add Product"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/my_products_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back_process_btn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttons"
+        android:text="My Products"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/seller_logout_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:text="Logout"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+</RelativeLayout>
